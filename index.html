@@ -1,0 +1,225 @@
+from IPython.display import HTML
+
+html_code = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJP Event & Entertainment | Corporate Event Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .custom-bg { background-color: #2b4c6f; }
+        .card-bg { background-color: #1e3a5f; }
+        .accent-gold { color: #f5be0b; }
+        .accent-sky { color: #9bc5db; }
+        .btn-gold { background: linear-gradient(135deg, #f5be0b 0%, #d49f04 100%); }
+    </style>
+</head>
+<body style="background-color: #192d43 !important; color: #ffffff !important;" class="font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#192d43]/90 backdrop-blur-md border-b border-[#2b4c6f]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="flex items-center space-x-2">
+                    <img src="https://lh3.googleusercontent.com/d/13d8uspcYcSYKP9jLyPDQhMSkGiHQtVVh" 
+                         alt="DJP Logo" 
+                         class="h-10 w-auto object-contain rounded-md"
+                         onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+                    
+                    <div id="fallback-logo" class="hidden items-center space-x-2">
+                        <i class="fa-solid fa-gem text-[#f5be0b] text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-xl font-bold tracking-wider uppercase bg-gradient-to-r from-white via-[#9bc5db] to-[#f5be0b] bg-clip-text text-transparent">DJP Event & Entertainment</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-[#9bc5db]">
+                <a href="#home" class="hover:text-[#f5be0b] transition">Home</a>
+                <a href="#services" class="hover:text-[#f5be0b] transition">Services</a>
+                <a href="#portfolio" class="hover:text-[#f5be0b] transition">Portfolio</a>
+                <a href="#about" class="hover:text-[#f5be0b] transition">About Us</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full btn-gold text-[#192d43] font-bold hover:opacity-95 transition shadow-lg">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden flex items-center justify-center bg-[#192d43]">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="inline-block py-1.5 px-5 rounded-full bg-[#2b4c6f]/60 border border-[#9bc5db]/30 text-[#f5be0b] text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">Premier Corporate Event Architects</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-tight text-white">
+                Crafting <span class="bg-gradient-to-r from-[#9bc5db] via-white to-[#f5be0b] bg-clip-text text-transparent">Extraordinary</span> Corporate Experiences
+            </h1>
+            <p class="text-lg md:text-xl text-[#9bc5db] max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+                From high-stakes global conferences to lavish annual galas, DJP Event & Entertainment transforms your corporate vision into flawless, unforgettable reality.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full btn-gold text-[#192d43] font-bold hover:opacity-95 transition shadow-xl">Explore Portfolio</a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#2b4c6f] border border-[#9bc5db]/30 text-white font-bold hover:bg-[#1e3a5f] transition">Get in Touch</a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-[#2b4c6f] text-center">
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-[#f5be0b] mb-1">250+</h3>
+                    <p class="text-xs text-[#9bc5db] uppercase tracking-wider font-semibold">Events Managed</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-[#f5be0b] mb-1">98%</h3>
+                    <p class="text-xs text-[#9bc5db] uppercase tracking-wider font-semibold">Client Retention</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-[#f5be0b] mb-1">15+</h3>
+                    <p class="text-xs text-[#9bc5db] uppercase tracking-wider font-semibold">Global Awards</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-[#f5be0b] mb-1">10M+</h3>
+                    <p class="text-xs text-[#9bc5db] uppercase tracking-wider font-semibold">Attendees Impressed</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-[#1e3a5f]/50 border-y border-[#2b4c6f]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-[#f5be0b] text-sm font-bold uppercase tracking-widest block mb-3">What We Do</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white">Tailored Corporate Solutions</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-[#1e3a5f] border border-[#2b4c6f] hover:border-[#f5be0b]/50 transition group shadow-lg">
+                    <div class="w-14 h-14 rounded-xl bg-[#2b4c6f] flex items-center justify-center text-[#f5be0b] text-xl mb-6 group-hover:bg-[#f5be0b] group-hover:text-[#192d43] transition">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Annual Conferences</h3>
+                    <p class="text-[#9bc5db] text-sm leading-relaxed">Seamless multi-day executive summits, keynote setups, stage production, and tech integration.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-[#1e3a5f] border border-[#2b4c6f] hover:border-[#f5be0b]/50 transition group shadow-lg">
+                    <div class="w-14 h-14 rounded-xl bg-[#2b4c6f] flex items-center justify-center text-[#f5be0b] text-xl mb-6 group-hover:bg-[#f5be0b] group-hover:text-[#192d43] transition">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Product Launches</h3>
+                    <p class="text-[#9bc5db] text-sm leading-relaxed">High-impact reveals, immersive brand experiences, media management, and jaw-dropping stage effects.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-[#1e3a5f] border border-[#2b4c6f] hover:border-[#f5be0b]/50 transition group shadow-lg">
+                    <div class="w-14 h-14 rounded-xl bg-[#2b4c6f] flex items-center justify-center text-[#f5be0b] text-xl mb-6 group-hover:bg-[#f5be0b] group-hover:text-[#192d43] transition">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Gala Dinners & Awards</h3>
+                    <p class="text-[#9bc5db] text-sm leading-relaxed">Sophisticated ambiance design, entertainment curation, custom lighting, and elite catering coordination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-[#192d43]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-[#f5be0b] text-sm font-bold uppercase tracking-widest block mb-3">Our Masterpieces</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white">Featured Event Portfolio</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative rounded-2xl overflow-hidden bg-[#1e3a5f] border border-[#2b4c6f] shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="Tech Summit" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#192d43] via-[#192d43]/40 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="text-xs text-[#f5be0b] font-bold uppercase tracking-wider">Tech Summit 2025</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Global Innovate Conference</h3>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden bg-[#1e3a5f] border border-[#2b4c6f] shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Product Launch" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#192d43] via-[#192d43]/40 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="text-xs text-[#f5be0b] font-bold uppercase tracking-wider">Automotive</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Next-Gen EV Reveal Showcase</h3>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden bg-[#1e3a5f] border border-[#2b4c6f] shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80" alt="Gala Night" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#192d43] via-[#192d43]/40 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="text-xs text-[#f5be0b] font-bold uppercase tracking-wider">Annual Celebration</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Apex Leadership Gala Dinner</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Enquiry Section -->
+    <section id="contact" class="py-24 bg-[#1e3a5f]/50 border-t border-[#2b4c6f]">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-[#f5be0b] text-sm font-bold uppercase tracking-widest block mb-3">Let's Connect</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white">Plan Your Next Event With Us</h2>
+            </div>
+            
+            <form id="enquiryForm" class="space-y-6 bg-[#1e3a5f] p-8 md:p-12 rounded-3xl border border-[#2b4c6f] shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-bold text-[#9bc5db] mb-2">Full Name</label>
+                        <input type="text" id="name" required class="w-full bg-[#192d43] border border-[#2b4c6f] rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-[#f5be0b] transition" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-bold text-[#9bc5db] mb-2">Corporate Email</label>
+                        <input type="email" id="email" required class="w-full bg-[#192d43] border border-[#2b4c6f] rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-[#f5be0b] transition" placeholder="name@company.com">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-bold text-[#9bc5db] mb-2">Event Type</label>
+                    <select id="eventType" class="w-full bg-[#192d43] border border-[#2b4c6f] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#f5be0b] transition">
+                        <option class="bg-[#192d43] text-white">Annual Conference</option>
+                        <option class="bg-[#192d43] text-white">Product Launch</option>
+                        <option class="bg-[#192d43] text-white">Gala Dinner / Awards</option>
+                        <option class="bg-[#192d43] text-white">Other Corporate Event</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-bold text-[#9bc5db] mb-2">Project Details & Requirements</label>
+                    <textarea id="message" rows="4" class="w-full bg-[#192d43] border border-[#2b4c6f] rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-[#f5be0b] transition" placeholder="Tell us about your event scale, dates, and requirements..."></textarea>
+                </div>
+                <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-400 to-emerald-600 text-[#192d43] font-extrabold hover:opacity-95 transition shadow-lg shadow-emerald-500/20 flex items-center justify-center space-x-2 text-base">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Send Enquiry via WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#192d43] border-t border-[#2b4c6f] text-center text-sm text-[#9bc5db]">
+        <p>&copy; 2026 DJP Event & Entertainment. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to Redirect to WhatsApp -->
+    <script>
+        const form = document.getElementById('enquiryForm');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const eventType = document.getElementById('eventType').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappNumber = "919057460411"; 
+
+            const text = `Hello DJP Event & Entertainment,%0A%0A*New Corporate Enquiry Received:*%0A- *Name:* ${name}%0A- *Email:* ${email}%0A- *Event Type:* ${eventType}%0A- *Requirements:* ${message}`;
+
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${text}`;
+            
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
+"""
+
+display(HTML(html_code))
